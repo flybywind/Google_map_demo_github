@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backgroud_popup"
+    tools:context=".MainActivity" >
+    <EditText
+        android:id="@+id/real_world_location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    /> 
+    <EditText
+        android:id="@+id/editor_note"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/real_world_location"
+    />    
+    
+    <Button 
+        android:id="@+id/save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/editor_note"
+        android:layout_alignParentLeft="true"
+        android:text="保存"
+        android:textSize="20sp"/>
+
+	<Button
+	    android:id="@+id/del_btn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="30dp"
+	    android:layout_toRightOf="@id/save_btn"
+	    android:layout_alignTop="@id/save_btn"
+	    android:layout_marginLeft="10dp"
+	    android:text="删除"
+	    android:textSize="20sp" />
+
+	<Button
+	    android:id="@+id/share_btn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="30dp"
+	    android:layout_toRightOf="@id/del_btn"
+	    android:layout_alignTop="@id/save_btn"
+	    android:text="@string/share_text"
+	    android:layout_marginLeft="10dp"
+	    android:textSize="20sp" />
+
+</RelativeLayout> 

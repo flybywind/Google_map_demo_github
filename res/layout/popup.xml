@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgroud_popup"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/location_time_tag"
+        android:layout_width="fill_parent"
+        android:layout_height="30sp"
+        android:layout_alignParentLeft="true"
+        android:text="@string/loc_date"
+        android:textSize="15sp" 
+        android:textAlignment="center"
+        android:textColor="#3ff3eb"
+        android:background="@drawable/backgroud_title"
+        android:gravity="left"/>
+   
+    <Button 
+        android:id="@+id/add_text_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/location_time_tag"
+        android:layout_alignParentLeft="true"
+        android:text="写日记"
+        android:textSize="20sp"/>
+    <Button 
+        android:id="@+id/del_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/location_time_tag"
+        android:layout_toRightOf="@id/add_text_btn"
+        android:text="删除以下所有日记"
+        android:textSize="20sp"/>
+
+    <ListView
+        android:id="@+id/listview_diary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/add_text_btn"
+        android:divider="?android:attr/listDividerAlertDialog"
+        android:dividerHeight="3dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical" >
+
+    </ListView>
+
+</RelativeLayout> 
